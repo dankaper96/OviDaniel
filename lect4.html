@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LECTURA 4</title>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">   
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+
+        <title>DISEÑOS DE SITIOS WEB | Fase de Construcción</title>
+        <script type="text/javascript" src="js/funciones.js"></script>  
+        <script type="text/javascript" src="js/prefixfree.min.js"></script>
+</head>
+<body>
+
+
+<section id="cabezera">
+    
+                <IMG  src="img/logoUnad.png">   
+
+                </section>
+
+<center><a href="https://www.cerotec.net/estadisticas-1719/file:" title="mis estadísticas"><img src="https://www.cerotec.net/contador.php?t=3&s=3&i=1719" alt="Contador de visitas y estadísticas"></a> <br><a href='' style='font-size:12px;' ></a></center>
+
+
+<a href="index.html"><img src="img/home.png"></a>
+
+<BR> <BR>
+<!-- Header
+            ============================================= -->
+<header>
+    <CENTER><ul>
+        <li> <a href="inicio.html">INICIO</a></li>  
+        <li> <a href="#">LECTURAS <span class="fa fa-angle-down"></span></a>
+        <ul>
+            <li> <a href="lect1.html">LECTURA 1</a></li>
+            <li> <a href="lect2.html">LECTURA 2</a></li>
+            <li> <a href="lect3.html">LECTURA 3</a></li>
+            <li> <a href="lect4.html">LECTURA 4</a></li>
+            <li> <a href="lect5.html">LECTURA 5</a></li>
+        </ul>
+
+        </li>
+
+        <li> <a href="#">MULTIMEDIA <span class="fa fa-angle-down"></span></a>
+        <ul>
+            <li> <a href="videos.html">VIDEOS</a></li>
+            <li> <a href="https://www.phpclasses.org/blog/category/podcast/">AUDIOS</a></li>
+        </ul>
+
+        </li>
+        <li> <a href="#">ACTIVIDADES <span class="fa fa-angle-down"></span></a>
+       <UL>
+         <LI> <a href="Act1y2.html">ACTIVIDAD 1 y 2 </a></LI>
+        <LI> <a href="Act3y4.html">ACTIVIDAD 3 y 4</a></LI>
+        <LI> <a href="Act5y6.html">ACTIVIDAD 5 y 6</a></LI>
+       </UL>
+
+
+        </li>
+        <li> <a href="autores.html">AUTORES</a></li>
+
+    </ul></CENTER>
+</header>
+
+<br><br><br>
+
+<nav>
+<div class="art1">
+    
+    <font face="franklin ghotic italic" size="5" color="red">
+         PHP insert into values. Insertar datos (registros, filas) en base de datos MySql. Ejemplos y ejercicio
+<br><br>
+         <p>
+            <font size="3" color="black" face="arial">
+                
+                <H4 align="left">INSERCIÓN DE DATOS CON PHP Y MySQL. EJEMPLOS Y EJERCICIOS RESUELTOS.</H4>
+
+Vamos a explicar cómo insertar registros en nuestra base de datos MySQL a través de código PHP. En concreto, añadiremos registros a la tabla agenda que habíamos creado previamente con phpMyAdmin. Para ello tendremos que realizar lo que se denomina una consulta SQL de inserción (insert into) e ir añadiendo tantos registros con sus correspondientes valores para los campos como deseemos.
+<center><img src="img/php.png"></center><br>
+
+
+
+Partiremos de nuestra base de datos donde tenemos una tabla denominada agenda con los siguientes datos:
+
+<center><img src="img/registros.png"></center>
+
+Para realizar la inserción de datos vamos a utilizar una sintaxis de este tipo:
+
+<center><img src="img/mysql.png"></center>
+
+fDonde mysqli_query indica que vamos a realizar una operación (en general se denominan consultas, aunque en este caso la operación sea una inserción de datos), $link es el identificador de conexión que hayamos obtenido con mysqli_connect, nombreTabla es el nombre de la tabla en la cual vamos a realizar la inserción de datos y datoCol1, datoCol2, …, datoColN representa los datos que vamos a insertar en la tabla. Tener en cuenta que debemos indicar los datos en el mismo orden en que se encuentran las columnas en la tabla. Por ejemplo para nuestra tabla agenda tendremos que seguir el orden: nombre, apellidos, direccion, telefono, edad, altura (orden de las columnas).
+
+<br>
+<H4 align="left">EJEMPLO DE INSERCIÓN DE DATOS EN UNA TABLA</H4>
+
+
+
+Escribe este código en un editor y guárdalo en un archivo con un nombre como ejemplo1.php. Luego ejecuta el código (una sola vez, ten en cuenta que si lo ejecutas varias veces insertarás varias veces repetidamente los datos en la base de datos). Recuerda también que debes cambiar y poner tus propios valores en las funciones mysqli_connect y mysqli_select_db.
+
+
+<center><img src="img/sentencia.png"></center><br>
+
+
+Nota: si usáramos sintaxis no mysqli se usaría mysql_query ("INSERT INTO nombreDeLaTabla VALUES (datoCol1, datoCol2, … datoColN ", $link).
+
+Tenemos que tener cuidado de poner los valores en el insert en el orden en el que aparecen en la base de datos cuando creamos la tabla. Es decir, el primer valor será para la primera columna (en nuestro ejemplo tipo varchar y corresponderá con el nombre), el segundo será para la segunda columna (en nuestro ejemplo tipo varchar y se corresponderá con los apellidos), etc. También tendremos que prestar atención para que los tipos de datos insertados se correspondan con los de la tabla. Por ejemplo, no debemos insertar un valor numérico decimal si se espera un entero.
+
+Ahora vamos a ejecutar el código de la entrega anterior del curso para ver los nuevos registros añadidos por pantalla. Escribe este código en un editor y guárdalo en un archivo con un nombre como ejemplo2.php. Recuerda que debes cambiar y poner tus propios valores en las funciones mysqli_connect y mysqli_select_db.
+
+
+<center><img src="img/sentencia2.png"></center>
+
+El resultado esperado es que se muestren por pantalla todos los resultados de la consulta:
+
+<center><img src="img/resultado.png"></center>
+<BR>
+<p>
+Hemos visualizado el contenido de la base de datos usando una consulta y mostrando los resultados por pantalla. Ten en cuenta que también puedes ver el contenido de la base de datos accediendo directamente a ella. Accede al panel de administración de tu servidor, luego a phpMyAdmin y comprueba cómo los nuevos valores insertados se encuentran en la tabla de la base de datos.
+<BR>
+
+Nota: los nuevos datos añadidos pueden aparecer al final o al principio de la tabla. Si quisiéramos ver los datos con un determinado orden tendríamos que incluir las instrucciones oportunas, pero no vamos a hablar de ello en este momento.
+<BR>
+Vamos a resumir lo que hemos hecho: por un lado hemos accedido a la base de datos mediante código PHP y hemos insertado dos nuevas filas (al ejecutar ejemplo1.php) en la tabla agenda. Por otro lado visualizamos el contenido de la tabla agenda (ejemplo2.php) realizando una consulta a la base de datos y comprobamos que aparecen los dos nuevos registros añadidos, correspondientes a “Pedro Gómez Gómez” y “Antonio Delgado Folken”.
+<BR>
+Las operaciones de inserción en bases de datos son muy frecuentes en programación web. Ten en cuenta por ejemplo que cada vez que se registra un usuario en una página web hay que guardar la información del usuario (nombre, correo electrónico, etc.). Igualmente cada vez que se produce una compra mediante comercio electrónico hay que almacenar la información de la compra en la base de datos. Es por tanto una operación básica y de gran interés dentro de la programación con bases de datos.
+</p>
+
+
+<font face="franklin ghotic italic" size="5" color="blue">REF. BIBLIOGRAFICA:<BR></font>
+
+aprender a programar.com (2016). Leer y escribir archivos de texto con PHP. Función fopen (modo), fgets, fputs, fclose y feof. Ejemplo (CU00836B) [Figura]. Recuperado de https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=585:leer-y-escribir-archivos-de-texto-con-php-funcion-fopen-modo-fgets-fputs-fclose-y-feof-ejemplo-cu00836b&catid=70&Itemid=193
+            </font>
+         </p>
+
+    </font> 
+
+    
+
+    
+</div>
+
+</nav>
+
+<br><br><br>
+
+<footer>
+                <IMG id="img" src="img/logoUnad.png">   
+
+                <p class="texto">Objetivo general: <br>
+Mostrar la programación y los elementos necesarios para realizar un sitio web dinámico con lenguaje de programación y bases de datos.
+</p>
+            </footer>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LECTURA 5</title>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">   
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+
+        <title>DISEÑOS DE SITIOS WEB | Fase de Construcción</title>
+        <script type="text/javascript" src="js/funciones.js"></script>  
+        <script type="text/javascript" src="js/prefixfree.min.js"></script>
+</head>
+<body>
+
+
+<section id="cabezera">
+    
+                <IMG  src="img/logoUnad.png">   
+
+                </section>
+
+<center><a href="https://www.cerotec.net/estadisticas-1719/file:" title="mis estadísticas"><img src="https://www.cerotec.net/contador.php?t=3&s=3&i=1719" alt="Contador de visitas y estadísticas"></a> <br><a href='' style='font-size:12px;' ></a></center>
+
+
+<a href="index.html"><img src="img/home.png"></a>
+
+<BR> <BR>
+<!-- Header
+            ============================================= -->
+<header>
+    <CENTER><ul>
+        <li> <a href="inicio.html">INICIO</a></li>  
+        <li> <a href="#">LECTURAS <span class="fa fa-angle-down"></span></a>
+        <ul>
+            <li> <a href="lect1.html">LECTURA 1</a></li>
+            <li> <a href="lect2.html">LECTURA 2</a></li>
+            <li> <a href="lect3.html">LECTURA 3</a></li>
+            <li> <a href="lect4.html">LECTURA 4</a></li>
+            <li> <a href="lect5.html">LECTURA 5</a></li>
+        </ul>
+
+        </li>
+
+        <li> <a href="#">MULTIMEDIA <span class="fa fa-angle-down"></span></a>
+        <ul>
+            <li> <a href="videos.html">VIDEOS</a></li>
+            <li> <a href="https://www.phpclasses.org/blog/category/podcast/">AUDIOS</a></li>
+        </ul>
+
+        </li>
+        <li> <a href="#">ACTIVIDADES <span class="fa fa-angle-down"></span></a>
+       <UL>
+         <LI> <a href="Act1y2.html">ACTIVIDAD 1 y 2 </a></LI>
+        <LI> <a href="Act3y4.html">ACTIVIDAD 3 y 4</a></LI>
+        <LI> <a href="Act5y6.html">ACTIVIDAD 5 y 6</a></LI>
+       </UL>
+
+
+        </li>
+        <li> <a href="autores.html">AUTORES</a></li>
+
+    </ul></CENTER>
+</header>
+
+<br><br><br>
+
+<nav>
+<div class="art1">
+    
+    <font face="franklin ghotic italic" size="5" color="red">
+         ARRAYS BÁSICOS O TRADICIONALES EN PHP </font>
+<br><br>
+         <p>
+            <font size="3" color="black" face="arial">
+                
+Un array es un conjunto de variables de una misma clase. Se accede a cada elemento individual del array mediante un número entero denominado índice. 0 es el índice o localizador del primer elemento y n-1 es el índice del último elemento, siendo n la dimensión, tamaño o longitud del array. Así $empleado[23] representaría al empleado con localizador 23 como veremos a continuación.
+
+<center><img src="img/php.png"></center><br>
+
+Los arrays son muy utilizados en la programación. Dependiendo de la cantidad de dimensiones que tengan pueden ser:
+
+<ul>
+    <li>De una dimensión (vectores). Por ejemplo $empleado[23]</li>
+    <li>De dos dimensiones (matrices). Por ejemplo $butaca[3, 14]</li> 
+    <li>De tres o más dimensiones (multidimensionales). Por ejemplo $fecha[2012, 9, 22]</li>
+    
+</ul>
+
+Para acceder a los elementos del array se utilizan los corchetes [], dentro de los cuales existirá un localizador o índice que es un número entero. Además, podemos guardar valores de cualquier tipo de variable (string, entero, punto flotante, booleano) dentro de un array. Por ejemplo $empleado[23] podría tomar como valor $empleado[23] = “Juan Pérez Suárez”. En este caso se trataría de un array de cadenas de texto, es decir, un array de string. En otro caso $empleado[23] podría tomar como valor $empleado[23] = 2312. En este caso se trataría de un array de valores numéricos.
+<br>
+En algunos lenguajes es necesario declarar los arrays antes de poder utilizarlos, pero en PHP no es necesario. Cuando se definen elementos de un array, PHP reconoce automáticamente que se trata de un array sin necesidad de declaración previa.
+<br><br><br>
+<font face="franklin ghotic italic" size="5" color="red">
+VECTORES (ARRAYS DE UNA DIMENSIÓN) </font>
+
+<br>
+Los vectores son los arrays que sólo contienen una dimensión (un índice).
+
+Escribe este código y guárdalo con un nombre de archivo como ejemplo1.php. A continuación, sube el fichero al servidor y visualiza el resultado en tu navegador.
+
+<br>
+<center><img src="img/array.png"></center>
+
+La forma general de uso de un array es: $nombreDeVariableArray [localizador] = valorAsignado;
+
+Ten en cuenta que lo que diferencia a una variable que pertenece a un array (conjunto de variables) es la presencia del corchete con un índice en su interior.
+
+<center><img src="img/jugador.png"></center>
+
+
+PHP admite también otra posibilidad que no admiten otros lenguajes: se pueden usar arrays sin especificar los números de los índices, ya que PHP los puede colocar automáticamente.
+<br>
+Escribe ahora este otro código y guárdalo con un nombre de archivo como ejemplo2.php. A continuación, sube el fichero al servidor y visualiza el resultado.
+<br><br>
+<center><img src="img/ciudad.png"></center>
+
+Fíjate que PHP ha colocado automáticamente los índices, asignando el 0 a Sevilla, el 1 a Madrid, el 2 a Barcelona y el 3 a Valencia. Hay que recordar que los arrays siempre comienzan numerándose desde cero.
+<br>
+Otra forma de asignar valores a un array vector es la siguiente:
+
+<center><img src="img/color.png"></center>
+<br>
+Como ves, esta es una forma abreviada cuya forma general es:
+<br>
+$nombreDelArray = array (valorElemento0, valorElemento1, valorElemento2, … , valorElementon)
+<br>
+El término array es una palabra clave en PHP cuyo significado es equivalente a decir “los elementos que aparecen en la lista a continuación son elementos de un array”.
+<br>
+<br><br><br>
+<font face="franklin ghotic italic" size="5" color="blue">REF. BIBLIOGRAFICA:<BR></font>
+
+aprender a programar.com (2016). Leer y escribir archivos de texto con PHP. Función fopen (modo), fgets, fputs, fclose y feof. Ejemplo (CU00836B) [Figura]. Recuperado de https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=585:leer-y-escribir-archivos-de-texto-con-php-funcion-fopen-modo-fgets-fputs-fclose-y-feof-ejemplo-cu00836b&catid=70&Itemid=193
+            </font>
+         </p>
+
+    </font> 
+
+    
+
+    
+</div>
+
+</nav>
+
+<br><br><br>
+
+<footer>
+                <IMG id="img" src="img/logoUnad.png">   
+
+                <p class="texto">Objetivo general: <br>
+Mostrar la programación y los elementos necesarios para realizar un sitio web dinámico con lenguaje de programación y bases de datos.
+</p>
+            </footer>
+</body>
+
+</html>
