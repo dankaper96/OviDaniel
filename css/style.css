@@ -1,0 +1,106 @@
+/*-----------------------------------------------------------------------------------
+	Nombre: DISEÑOS DE SITIOS WEB | Fase de Construcción
+	URI: 
+	Descripcion: Unidad 1 y 2: Fase de Construcción - Crear un OVI en formato WEB con HTML5 y CSS3.
+	Autores: Jhonattan Guillermo Rodriguez Rojas - 
+-----------------------------------------------------------------------------------*/
+.caja {
+
+font-family: franklin ghotic heavy,CenturyGothic,AppleGothic,sans-serif;
+
+color: #ffffff;
+
+font-size: 18px;
+
+font-weight: 400;
+
+text-align: center;
+
+background: #889ccf;
+
+margin: 0 0 25px;
+
+overflow: hidden;
+
+padding: 20px;
+
+border-radius: 35px 0px 35px 0px;
+
+-moz-border-radius: 35px 0px 35px 0px;
+
+-webkit-border-radius: 35px 0px 35px 0px;
+
+border: 2px solid #5878ca;
+
+
+}
+
+.caja2 {
+
+font-family: franklin ghotic heavy,CenturyGothic,AppleGothic,sans-serif;
+
+color: #ffffff;
+
+font-size: 18px;
+
+font-weight: 400;
+
+text-align: center;
+
+background: #A38567;
+
+margin: 0 0 25px;
+
+overflow: hidden;
+
+padding: 20px;
+
+border-radius: 35px 0px 35px 0px;
+
+-moz-border-radius: 35px 0px 35px 0px;
+
+-webkit-border-radius: 35px 0px 35px 0px;
+
+border: 2px solid #5878ca;
+
+
+}
+
+
+.cajaAutor{
+
+font-family: sans-serif;
+
+font-size: 18px;
+
+font-weight: 400;
+
+color: #ffffff;
+
+background: #889ccf;
+
+margin: 0 0 25px;
+
+overflow: hidden;
+
+padding: 20px;
+
+}
+
+/* ACTIVIDAD 1 CAJA DE TEXTO */
+#act1 {
+	width: 850px;
+	height: 170px;
+	background-color: yellow;
+	border: 2px solid blue;
+	text-align: left;
+} 
+
+/* ACTIVIDAD 2 CAJA DE TEXTO */
+#act2 {
+	width: 850px;
+	height: 500px;
+	background-color: #7CE0F9;
+	border: 2px solid red;
+	text-align: left;
+} 

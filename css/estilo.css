@@ -1,0 +1,181 @@
+body{
+margin: 0px;
+padding: 0px;
+font-family: "franklin ghotic heavy",  italic; 
+	
+}
+
+#header {
+ margin:auto;
+ font-family:castellar;
+}
+/*
+#menu {
+	
+padding-top: 15px;
+background: #E6E4E2;
+box-shadow: 1px 1px 5px #AAA8A5;
+
+margin-left: 60px;
+margin-right: 60px;
+margin-top: 40px;
+width: 89%;
+height: 45px;
+transition: border-bottom .7s;
+}
+
+#menu ul a {
+text-decoration: none;
+padding: 60px;
+background: transparent;
+}
+
+#menu ul a:hover{
+border-bottom: 6px solid #F0B429;
+padding-bottom: 13px;
+}
+*/
+
+#wrapper {
+border-radius: 5px;
+background-color: #F0B429;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+margin: 0 auto;
+width: 900px;
+height: 400px;
+}
+
+#cabezera {
+border-radius: 5px;
+background-color: #005883;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+padding: 4px;
+margin-left: 60px;
+margin-right: 60px;
+margin-top: 40px;
+width: 900px;
+height: 100px;
+}
+
+
+#primera {
+border-radius: 5px;
+background-color: #005883;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+padding: 40px;
+margin-left: 50px;
+margin-top: 40px;
+width: 230px;
+height: 300px;
+float: left;
+}
+
+
+
+#segunda {
+border-radius: 5px;
+background-color: #005883;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+padding: 40px;
+margin-left: 50px;
+margin-top: 40px;
+width: 230px;
+height: 300px;
+float: left;
+}
+
+
+
+#tercera {
+border-radius: 5px;
+background-color: #005883;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+padding: 40px;
+margin-left: 50px;
+margin-top: 40px;
+width: 230px;
+height: 300px;
+float: left;
+}
+
+
+/* ESTILOS MENU DESPLEGABLE*/
+
+header{
+	width: auto;
+	height: 60px;
+	background: #005883;
+    display: flex;
+    justify-content: center;
+}
+
+header ul{
+	display: flex;  
+	list-style: none;
+}
+
+/*  menu */
+header ul li a{
+	display: block;
+	padding: 20px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*  submenus */
+			 
+header ul ul{
+	position: center;
+	top: 260px;
+	display: block;
+	background: black;
+	transform: translateX(60%);
+	opacity: 0;
+	transition: all .6s
+}
+
+
+header ul li a span{
+	transition: all .6s
+}
+
+header ul li a:hover span{
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+header ul li:hover ul{
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+
+
+footer{
+	width: 100%;
+	height: 100px;
+	background:rgba(0,0,0,0.7);
+
+position: fixed;
+bottom: 0;
+}
+
+p.texto{
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+
+}
+
+/*POSICION DE LA IMAGEN UNAD EN EL FOOTER */
+<style> 
+#img {position:absolute; top:20px} 
+#img {position:absolute; bottom:20px} 
+#img {position:absolute; left:20px} 
+#img {position:absolute; right:20px} 
+</style> 
+
+
+/* ESTILOS CAJA DE TEXTO PAGINA INICIO */
+
