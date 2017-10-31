@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ACTIVIDADES 1 Y 2</title>
+	<title>ACTIVIDADES 5 y 6</title>
 	<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -65,43 +65,105 @@
 
 <br><br><br>
 
-	<center><section id="act1">
+	<center><section id="act5y6">
 		<article>
 			<p>
-				<h4>ACTIVIDAD NO.1 </h4>
-				Crea un formulario.html que solicite al usuario los siguientes
-datos:
-Nombre (texto)
-Apellidos(texto)
-Sexo (radio)
-Sistema Operativo Preferido (select)
-Si tiene coche (checkbox)
-Otros comentarios (textarea)
-Debes enviar estos datos al documento tusdatos.php que muestre los datos introducidos por el
-usuario en el formulario anterior.
-                 
+				<h4>ACTIVIDAD NO.5 y 6 </h4>
+				Observa el siguiente Modelo Entidad Relacion para resolver algunos ITEMS
+				<img src="img/MER MYSQL act 5y6.jpg"><br><br><br>
 
-			</p>
+				1. Obtener los datos completos de los empleados.
+				<br>
+				2. Obtener los datos completos de los departamentos.
+				<br>
+				3. Obtener los datos de los empleados con cargo ‘Secretaria’.
+				<br>
+				4. Obtener el nombre y salario de los empleados.
+				<br>
+				5. Obtener los datos de los empleados vendedores, ordenado por nombre.
+				<br>
+				6. Listar el nombre de los departamentos.
+				<br>
+				7. Obtener el nombre y cargo de todos los empleados, ordenado por salario.
+				<br>
+				8. Listar los salarios y comisiones de los empleados del departamento 2000, ordenado por comisión.
+				<br>
+				9. Listar todas las comisiones.
+				<br>
+				10. Obtener el valor total a pagar que resulta de sumar a los empleados del departamento 3000 una bonificación de 500.000, en orden alfabético del empleado
+				<br><br>
+
+
+                 <!-- https://www.discoduroderoer.es/ejercicios-propuestos-y-resueltos-de-consultas-mysql-empleados-y-departamentos/ -->
+
+             
+
+ <!-- CODIGO PARA MOSTRAR Y OCULTAR CONTENIDO -->
+
+<div id="ocultable">
+
+<h4>Respuesta 1</h4>
+1 select * <br>
+2 from empleados;
+<br><br>
+<h4>Respuesta 2</h4>
+1 select * <br>
+2 from departamentos;
+<br><br>
+<h4>Respuesta 3</h4>
+1 select * <br>
+2 from empleados 
+3 where lower(cargoE)='secretaria';
+<br><br>
+<h4>Respuesta 4</h4>
+1 select nomemp, salemp <br>
+2 from empleados;
+<br><br>
+<h4>Respuesta 5</h4>
+1 select * <br>
+2 from empleados <br>
+3 where lower(cargoE)='vendedor'<br>
+4 order by nomEmp asc;
+<br><br>
+<h4>Respuesta 6</h4>
+1 select distinct nombreDPto <br>
+2 from departamentos;
+<br><br>
+<h4>Respuesta 7</h4>
+1 select nomEmp, cargoE, salemp<br>
+2 from empleados <br>
+3 order by salemp;
+<br><br>
+<h4>Respuesta 8</h4>
+1 select salemp, comisione <br>
+2 from empleados <br>
+3 order by comisionE;
+<br><br>
+<h4>Respuesta 9</h4>
+1 select distinct comisione <br>
+2 from empleados;
+<br><br>
+<h4>Respuesta 10</h4>
+1 select nomemp, salemp, (salemp+500000) as 'pago estimado'<br>
+2 from empleados <br>
+3 where codDepto = '3000'<br>
+4 order by nomemp;
+<br><br>
+
+
+</div>
+
+<button onclick="return mostrarOcultar('ocultable')" type="button">Mostrar/Ocultar RESPUESTAS</button>
+
+
+
 		</article>
 	</section>
 </center>
 
 <br><br><br>
  
-<center><section id="act2">
-		<article>
-			<p>
-				<h4>ACTIVIDAD NO.2 </h4>
-				¿Qué realiza el script PHP de la siguiente imagen ? Contiene errores ¿Cómo los
-solucionarías? <br>
-               <img src="img/act2php.png">  
-
-			</p>
-		</article>
-	</section>
-</center>
-
-<br><br><br><br><br><br>
+<br><br><br>
 
 
 

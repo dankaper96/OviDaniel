@@ -104,3 +104,28 @@ padding: 20px;
 	border: 2px solid red;
 	text-align: left;
 } 
+/* ACTIVIDAD 3 CAJA DE TEXTO */
+#act3 {
+	width: 850px;
+	height: 170px;
+	background-color: #F5B73A;
+	border: 2px solid red;
+	text-align: left;
+} 
+/* ACTIVIDAD 4 CAJA DE TEXTO */
+#act4 {
+	width: 850px;
+	height: 170px;
+	background-color: #7CE0F9;
+	border: 2px solid red;
+	text-align: left;
+} 
+
+/* ACTIVIDAD 5 y 6 CAJA DE TEXTO */
+#act5y6 {
+	width: 850px;
+	height: 1960px;
+	background-color: #F3DFB7;
+	border: 2px solid red;
+	text-align: left;
+} 
